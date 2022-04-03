@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		7440B44E27F8E1FA00C809BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440B44D27F8E1FA00C809BC /* AppDelegate.swift */; };
 		7440B45027F8E1FA00C809BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440B44F27F8E1FA00C809BC /* SceneDelegate.swift */; };
-		7440B45227F8E1FA00C809BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440B45127F8E1FA00C809BC /* ViewController.swift */; };
+		7440B45227F8E1FA00C809BC /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440B45127F8E1FA00C809BC /* BluetoothViewController.swift */; };
 		7440B45527F8E1FA00C809BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7440B45327F8E1FA00C809BC /* Main.storyboard */; };
 		7440B45727F8E1FD00C809BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7440B45627F8E1FD00C809BC /* Assets.xcassets */; };
 		7440B45A27F8E1FD00C809BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7440B45827F8E1FD00C809BC /* LaunchScreen.storyboard */; };
 		7440B46527F8E1FD00C809BC /* BluetoothBuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440B46427F8E1FD00C809BC /* BluetoothBuddyTests.swift */; };
 		7440B46F27F8E1FD00C809BC /* BluetoothBuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440B46E27F8E1FD00C809BC /* BluetoothBuddyUITests.swift */; };
 		7440B47127F8E1FD00C809BC /* BluetoothBuddyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440B47027F8E1FD00C809BC /* BluetoothBuddyUITestsLaunchTests.swift */; };
+		7440B47E27F90EB500C809BC /* BluetoothTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440B47D27F90EB500C809BC /* BluetoothTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,7 @@
 		7440B44A27F8E1FA00C809BC /* BluetoothBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7440B44D27F8E1FA00C809BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7440B44F27F8E1FA00C809BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7440B45127F8E1FA00C809BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7440B45127F8E1FA00C809BC /* BluetoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewController.swift; sourceTree = "<group>"; };
 		7440B45427F8E1FA00C809BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7440B45627F8E1FD00C809BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7440B45927F8E1FD00C809BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		7440B46A27F8E1FD00C809BC /* BluetoothBuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluetoothBuddyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7440B46E27F8E1FD00C809BC /* BluetoothBuddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothBuddyUITests.swift; sourceTree = "<group>"; };
 		7440B47027F8E1FD00C809BC /* BluetoothBuddyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothBuddyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7440B47D27F90EB500C809BC /* BluetoothTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +103,12 @@
 			children = (
 				7440B44D27F8E1FA00C809BC /* AppDelegate.swift */,
 				7440B44F27F8E1FA00C809BC /* SceneDelegate.swift */,
-				7440B45127F8E1FA00C809BC /* ViewController.swift */,
+				7440B45127F8E1FA00C809BC /* BluetoothViewController.swift */,
 				7440B45327F8E1FA00C809BC /* Main.storyboard */,
 				7440B45627F8E1FD00C809BC /* Assets.xcassets */,
 				7440B45827F8E1FD00C809BC /* LaunchScreen.storyboard */,
 				7440B45B27F8E1FD00C809BC /* Info.plist */,
+				7440B47D27F90EB500C809BC /* BluetoothTableViewCell.swift */,
 			);
 			path = BluetoothBuddy;
 			sourceTree = "<group>";
@@ -258,7 +261,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7440B45227F8E1FA00C809BC /* ViewController.swift in Sources */,
+				7440B47E27F90EB500C809BC /* BluetoothTableViewCell.swift in Sources */,
+				7440B45227F8E1FA00C809BC /* BluetoothViewController.swift in Sources */,
 				7440B44E27F8E1FA00C809BC /* AppDelegate.swift in Sources */,
 				7440B45027F8E1FA00C809BC /* SceneDelegate.swift in Sources */,
 			);
@@ -440,6 +444,8 @@
 				DEVELOPMENT_TEAM = 2L8XQVU633;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BluetoothBuddy/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -468,6 +474,8 @@
 				DEVELOPMENT_TEAM = 2L8XQVU633;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BluetoothBuddy/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
