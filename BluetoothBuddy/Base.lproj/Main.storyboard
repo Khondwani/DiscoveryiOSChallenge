@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pnh-cL-5Gb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Bluetooth View Controller-->
+        <!--Bluetooth Devices-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="BluetoothViewController" customModule="BluetoothBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BluetoothViewController" customModule="DiscoveryChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,40 +41,37 @@
                                             <constraint firstAttribute="height" constant="454" id="hqa-s3-Fsn"/>
                                         </constraints>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="bluetoothCell" rowHeight="73" id="uba-fU-Pvd" customClass="BluetoothTableViewCell" customModule="BluetoothBuddy" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="44.5" width="382" height="73"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="bluetoothCell" rowHeight="110" id="uba-fU-Pvd" customClass="BluetoothTableViewCell" customModule="DiscoveryChallenge" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="44.5" width="382" height="110"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uba-fU-Pvd" id="XwN-o4-Kew">
-                                                    <rect key="frame" x="0.0" y="0.0" width="382" height="73"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="382" height="110"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10km away" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIi-79-ktT">
-                                                            <rect key="frame" x="248" y="21" width="114" height="32"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="114" id="OU4-UX-Bc7"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bluetooth 1 is the best in the world" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kT8-wN-DXb">
+                                                            <rect key="frame" x="0.0" y="21" width="382" height="42"/>
+                                                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bluetooth 1 is the best in the world" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kT8-wN-DXb">
-                                                            <rect key="frame" x="20" y="21" width="177" height="32"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10km away" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIi-79-ktT">
+                                                            <rect key="frame" x="0.0" y="64" width="382" height="35"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="177" id="oiM-VP-6Vr"/>
+                                                                <constraint firstAttribute="height" constant="35" id="E47-gJ-LQU"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstAttribute="bottom" secondItem="kT8-wN-DXb" secondAttribute="bottom" constant="20" symbolic="YES" id="1Be-No-aAw"/>
-                                                        <constraint firstAttribute="bottom" secondItem="xIi-79-ktT" secondAttribute="bottom" constant="20" symbolic="YES" id="OXm-5M-U6E"/>
-                                                        <constraint firstItem="xIi-79-ktT" firstAttribute="leading" secondItem="kT8-wN-DXb" secondAttribute="trailing" constant="51" id="QwP-Wz-7nV"/>
-                                                        <constraint firstItem="kT8-wN-DXb" firstAttribute="top" secondItem="XwN-o4-Kew" secondAttribute="top" constant="21" id="bNF-W3-v6J"/>
-                                                        <constraint firstItem="xIi-79-ktT" firstAttribute="top" secondItem="XwN-o4-Kew" secondAttribute="top" constant="21" id="gDd-xc-BSE"/>
-                                                        <constraint firstItem="kT8-wN-DXb" firstAttribute="leading" secondItem="XwN-o4-Kew" secondAttribute="leading" constant="20" symbolic="YES" id="qbY-AN-xcs"/>
-                                                        <constraint firstAttribute="trailing" secondItem="xIi-79-ktT" secondAttribute="trailing" constant="20" symbolic="YES" id="yjP-sw-sVw"/>
+                                                        <constraint firstAttribute="bottom" secondItem="xIi-79-ktT" secondAttribute="bottom" constant="11" id="16H-9d-XXY"/>
+                                                        <constraint firstItem="xIi-79-ktT" firstAttribute="leading" secondItem="XwN-o4-Kew" secondAttribute="leading" id="9bV-tq-ahr"/>
+                                                        <constraint firstItem="xIi-79-ktT" firstAttribute="top" secondItem="kT8-wN-DXb" secondAttribute="bottom" constant="1" id="dhe-gq-bMR"/>
+                                                        <constraint firstAttribute="trailing" secondItem="kT8-wN-DXb" secondAttribute="trailing" id="mSH-BB-hO1"/>
+                                                        <constraint firstAttribute="trailing" secondItem="xIi-79-ktT" secondAttribute="trailing" id="p1L-Pi-2H4"/>
+                                                        <constraint firstItem="kT8-wN-DXb" firstAttribute="top" secondItem="XwN-o4-Kew" secondAttribute="top" constant="21" id="uXG-rn-hhV"/>
+                                                        <constraint firstItem="kT8-wN-DXb" firstAttribute="leading" secondItem="XwN-o4-Kew" secondAttribute="leading" id="vc0-81-rE4"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
@@ -91,6 +88,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="SCAN FOR BUDDIES"/>
+                                        <connections>
+                                            <action selector="scan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dZQ-h7-uSg"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -103,21 +103,156 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WcK-OG-4zf" secondAttribute="trailing" constant="16" id="6XM-DX-GLb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WcK-OG-4zf" secondAttribute="bottom" constant="40.5" id="8La-aH-t7x"/>
                             <constraint firstItem="WcK-OG-4zf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="BY0-CS-JdD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WcK-OG-4zf" secondAttribute="bottom" constant="89.5" id="JQ5-gm-sLb"/>
                             <constraint firstItem="WcK-OG-4zf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="WQq-4S-yQn"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Bluetooth Devices" image="dot.radiowaves.left.and.right" catalog="system" id="dww-jx-Y8Y"/>
                     <connections>
                         <outlet property="bluetoothTable" destination="hCl-DX-abP" id="l0v-wl-tUv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1034.7826086956522" y="-214.28571428571428"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="lmh-sd-P8m">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="pnh-cL-5Gb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RGs-rI-y5S">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="RKM-ly-mAy"/>
+                        <segue destination="fZL-uP-dYX" kind="relationship" relationship="viewControllers" id="FLg-Ss-Hkh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MEQ-Ph-7Vi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="QE5-dO-jST">
+            <objects>
+                <navigationController id="fZL-uP-dYX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="DN0-4e-oOK"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cZ5-6W-pFk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="S6P-TV-TG2" kind="relationship" relationship="rootViewController" id="wqZ-c3-jmK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AfQ-jR-6jc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072" y="470"/>
+        </scene>
+        <!--Generated Maps-->
+        <scene sceneID="0M8-ja-4qi">
+            <objects>
+                <tableViewController id="S6P-TV-TG2" customClass="HeatmapTableViewController" customModule="DiscoveryChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="vwZ-de-tCl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="htmlMaps" rowHeight="90" id="3uc-8D-APh" customClass="HeatmapTableViewCell" customModule="DiscoveryChallenge" customModuleProvider="target">
+                                <rect key="frame" x="20" y="49.5" width="374" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3uc-8D-APh" id="TU5-3c-1Pl">
+                                    <rect key="frame" x="0.0" y="0.0" width="345.5" height="90"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eui-nG-mLo">
+                                            <rect key="frame" x="40" y="11" width="298" height="68"/>
+                                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mappin.and.ellipse" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8nM-qT-uJ2">
+                                            <rect key="frame" x="7" y="33.5" width="25" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="24.5" id="Ykm-aQ-zvg"/>
+                                                <constraint firstAttribute="width" constant="25" id="rJC-ZI-YQ3"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="8nM-qT-uJ2" firstAttribute="leading" secondItem="TU5-3c-1Pl" secondAttribute="leading" constant="7" id="4Hl-GK-aGM"/>
+                                        <constraint firstAttribute="bottom" secondItem="8nM-qT-uJ2" secondAttribute="bottom" constant="34.5" id="FIx-6Y-6fa"/>
+                                        <constraint firstItem="Eui-nG-mLo" firstAttribute="bottom" secondItem="TU5-3c-1Pl" secondAttribute="bottomMargin" id="QIg-8h-RWg"/>
+                                        <constraint firstItem="Eui-nG-mLo" firstAttribute="top" secondItem="TU5-3c-1Pl" secondAttribute="topMargin" id="SJe-y9-51w"/>
+                                        <constraint firstItem="8nM-qT-uJ2" firstAttribute="top" secondItem="TU5-3c-1Pl" secondAttribute="top" constant="34" id="brF-GZ-yRG"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Eui-nG-mLo" secondAttribute="trailing" constant="-0.5" id="hUh-Pi-dUQ"/>
+                                        <constraint firstItem="Eui-nG-mLo" firstAttribute="leading" secondItem="8nM-qT-uJ2" secondAttribute="trailing" constant="8" symbolic="YES" id="vff-TW-FHl"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="htmlName" destination="Eui-nG-mLo" id="ZxM-zj-cbl"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="S6P-TV-TG2" id="PTO-ub-thm"/>
+                            <outlet property="delegate" destination="S6P-TV-TG2" id="N6v-mx-2cV"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Heatmaps" image="map" catalog="system" id="odo-lV-cF9"/>
+                    <navigationItem key="navigationItem" title="Generated Maps" id="pUt-Pf-DuC"/>
+                    <connections>
+                        <segue destination="mDa-ba-n7X" kind="show" identifier="toMapView" id="gse-q7-f67"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LhJ-CV-RjD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1800.0000000000002" y="468.75"/>
+        </scene>
+        <!--Heatmap-->
+        <scene sceneID="FLT-7b-UuA">
+            <objects>
+                <viewController id="mDa-ba-n7X" customClass="WebViewViewController" customModule="DiscoveryChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1W9-fJ-Wvv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E7h-aR-9H0">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EUl-au-JxT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="E7h-aR-9H0" firstAttribute="leading" secondItem="EUl-au-JxT" secondAttribute="leading" id="4QO-LO-WIf"/>
+                            <constraint firstAttribute="bottom" secondItem="E7h-aR-9H0" secondAttribute="bottom" id="Zmj-8R-xpo"/>
+                            <constraint firstItem="E7h-aR-9H0" firstAttribute="top" secondItem="EUl-au-JxT" secondAttribute="top" id="pgn-AM-x5r"/>
+                            <constraint firstItem="E7h-aR-9H0" firstAttribute="trailing" secondItem="EUl-au-JxT" secondAttribute="trailing" id="uLt-88-z2y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Heatmap" id="q7O-Uu-Yd1"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="webView" destination="E7h-aR-9H0" id="jre-d8-VMi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xEI-1G-77T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2597.1014492753625" y="469.41964285714283"/>
         </scene>
     </scenes>
     <resources>
+        <image name="dot.radiowaves.left.and.right" catalog="system" width="128" height="89"/>
+        <image name="map" catalog="system" width="128" height="110"/>
+        <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
         <image name="shareplay" catalog="system" width="128" height="73"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

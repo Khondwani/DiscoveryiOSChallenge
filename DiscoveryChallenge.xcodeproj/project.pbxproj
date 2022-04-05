@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0020DEE4466F710DF82C4517 /* Pods_DiscoveryChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16EDE461F04F4F7A57E35990 /* Pods_DiscoveryChallengeTests.framework */; };
+		2246613AA516ADCA3C5A8448 /* Pods_DiscoveryChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7F10D353B0E113D1759A43 /* Pods_DiscoveryChallenge.framework */; };
 		7440B44E27F8E1FA00C809BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440B44D27F8E1FA00C809BC /* AppDelegate.swift */; };
 		7440B45027F8E1FA00C809BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440B44F27F8E1FA00C809BC /* SceneDelegate.swift */; };
 		7440B45227F8E1FA00C809BC /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440B45127F8E1FA00C809BC /* BluetoothViewController.swift */; };
@@ -17,6 +19,10 @@
 		7440B46F27F8E1FD00C809BC /* BluetoothBuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440B46E27F8E1FD00C809BC /* BluetoothBuddyUITests.swift */; };
 		7440B47127F8E1FD00C809BC /* BluetoothBuddyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440B47027F8E1FD00C809BC /* BluetoothBuddyUITestsLaunchTests.swift */; };
 		7440B47E27F90EB500C809BC /* BluetoothTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440B47D27F90EB500C809BC /* BluetoothTableViewCell.swift */; };
+		74DCB2CC27FB7F8C00942F09 /* HeatmapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DCB2CB27FB7F8C00942F09 /* HeatmapTableViewCell.swift */; };
+		74DCB2CE27FB7FA400942F09 /* HeatmapTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DCB2CD27FB7FA400942F09 /* HeatmapTableViewController.swift */; };
+		74DCB2D127FBAB2C00942F09 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DCB2D027FBAB2C00942F09 /* WebViewViewController.swift */; };
+		89017ED6230F345A2B9FD234 /* Pods_DiscoveryChallenge_DiscoveryChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54389658D6FFFB88FEC4A481 /* Pods_DiscoveryChallenge_DiscoveryChallengeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7440B44A27F8E1FA00C809BC /* BluetoothBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16EDE461F04F4F7A57E35990 /* Pods_DiscoveryChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiscoveryChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		357C1093151A0AE3DAEDC3B9 /* Pods-DiscoveryChallenge-DiscoveryChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiscoveryChallenge-DiscoveryChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-DiscoveryChallenge-DiscoveryChallengeUITests/Pods-DiscoveryChallenge-DiscoveryChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3CBEA5C29700A64CA52117EF /* Pods-DiscoveryChallenge-DiscoveryChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiscoveryChallenge-DiscoveryChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-DiscoveryChallenge-DiscoveryChallengeUITests/Pods-DiscoveryChallenge-DiscoveryChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		54389658D6FFFB88FEC4A481 /* Pods_DiscoveryChallenge_DiscoveryChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiscoveryChallenge_DiscoveryChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7440B44A27F8E1FA00C809BC /* DiscoveryChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiscoveryChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7440B44D27F8E1FA00C809BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7440B44F27F8E1FA00C809BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7440B45127F8E1FA00C809BC /* BluetoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewController.swift; sourceTree = "<group>"; };
@@ -45,12 +55,20 @@
 		7440B45627F8E1FD00C809BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7440B45927F8E1FD00C809BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7440B45B27F8E1FD00C809BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7440B46027F8E1FD00C809BC /* BluetoothBuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluetoothBuddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7440B46027F8E1FD00C809BC /* DiscoveryChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscoveryChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7440B46427F8E1FD00C809BC /* BluetoothBuddyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothBuddyTests.swift; sourceTree = "<group>"; };
-		7440B46A27F8E1FD00C809BC /* BluetoothBuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluetoothBuddyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7440B46A27F8E1FD00C809BC /* DiscoveryChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscoveryChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7440B46E27F8E1FD00C809BC /* BluetoothBuddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothBuddyUITests.swift; sourceTree = "<group>"; };
 		7440B47027F8E1FD00C809BC /* BluetoothBuddyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothBuddyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7440B47D27F90EB500C809BC /* BluetoothTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothTableViewCell.swift; sourceTree = "<group>"; };
+		74DCB2CB27FB7F8C00942F09 /* HeatmapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatmapTableViewCell.swift; sourceTree = "<group>"; };
+		74DCB2CD27FB7FA400942F09 /* HeatmapTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatmapTableViewController.swift; sourceTree = "<group>"; };
+		74DCB2D027FBAB2C00942F09 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
+		C12AC2044CE7D0D67E4020AA /* Pods-DiscoveryChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiscoveryChallenge.release.xcconfig"; path = "Target Support Files/Pods-DiscoveryChallenge/Pods-DiscoveryChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		C444D2E4C7726E03980D7437 /* Pods-DiscoveryChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiscoveryChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-DiscoveryChallengeTests/Pods-DiscoveryChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		C9DB35F97CDFAA93FD6A098F /* Pods-DiscoveryChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiscoveryChallenge.debug.xcconfig"; path = "Target Support Files/Pods-DiscoveryChallenge/Pods-DiscoveryChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		DA45CE86D7964EE74E392FD2 /* Pods-DiscoveryChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiscoveryChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-DiscoveryChallengeTests/Pods-DiscoveryChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED7F10D353B0E113D1759A43 /* Pods_DiscoveryChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiscoveryChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2246613AA516ADCA3C5A8448 /* Pods_DiscoveryChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0020DEE4466F710DF82C4517 /* Pods_DiscoveryChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +92,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89017ED6230F345A2B9FD234 /* Pods_DiscoveryChallenge_DiscoveryChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7142587FD7952EAD6CC9D848 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED7F10D353B0E113D1759A43 /* Pods_DiscoveryChallenge.framework */,
+				54389658D6FFFB88FEC4A481 /* Pods_DiscoveryChallenge_DiscoveryChallengeUITests.framework */,
+				16EDE461F04F4F7A57E35990 /* Pods_DiscoveryChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7440B44127F8E1FA00C809BC = {
 			isa = PBXGroup;
 			children = (
@@ -85,15 +116,17 @@
 				7440B46327F8E1FD00C809BC /* BluetoothBuddyTests */,
 				7440B46D27F8E1FD00C809BC /* BluetoothBuddyUITests */,
 				7440B44B27F8E1FA00C809BC /* Products */,
+				DA29859B19C172683EACBB83 /* Pods */,
+				7142587FD7952EAD6CC9D848 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		7440B44B27F8E1FA00C809BC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7440B44A27F8E1FA00C809BC /* BluetoothBuddy.app */,
-				7440B46027F8E1FD00C809BC /* BluetoothBuddyTests.xctest */,
-				7440B46A27F8E1FD00C809BC /* BluetoothBuddyUITests.xctest */,
+				7440B44A27F8E1FA00C809BC /* DiscoveryChallenge.app */,
+				7440B46027F8E1FD00C809BC /* DiscoveryChallengeTests.xctest */,
+				7440B46A27F8E1FD00C809BC /* DiscoveryChallengeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +134,7 @@
 		7440B44C27F8E1FA00C809BC /* BluetoothBuddy */ = {
 			isa = PBXGroup;
 			children = (
+				74DCB2CA27FB7F6F00942F09 /* HeatMapViews */,
 				7440B44D27F8E1FA00C809BC /* AppDelegate.swift */,
 				7440B44F27F8E1FA00C809BC /* SceneDelegate.swift */,
 				7440B45127F8E1FA00C809BC /* BluetoothViewController.swift */,
@@ -130,30 +164,64 @@
 			path = BluetoothBuddyUITests;
 			sourceTree = "<group>";
 		};
+		74DCB2CA27FB7F6F00942F09 /* HeatMapViews */ = {
+			isa = PBXGroup;
+			children = (
+				74DCB2CF27FBAAF100942F09 /* Webview */,
+				74DCB2CB27FB7F8C00942F09 /* HeatmapTableViewCell.swift */,
+				74DCB2CD27FB7FA400942F09 /* HeatmapTableViewController.swift */,
+			);
+			path = HeatMapViews;
+			sourceTree = "<group>";
+		};
+		74DCB2CF27FBAAF100942F09 /* Webview */ = {
+			isa = PBXGroup;
+			children = (
+				74DCB2D027FBAB2C00942F09 /* WebViewViewController.swift */,
+			);
+			path = Webview;
+			sourceTree = "<group>";
+		};
+		DA29859B19C172683EACBB83 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9DB35F97CDFAA93FD6A098F /* Pods-DiscoveryChallenge.debug.xcconfig */,
+				C12AC2044CE7D0D67E4020AA /* Pods-DiscoveryChallenge.release.xcconfig */,
+				3CBEA5C29700A64CA52117EF /* Pods-DiscoveryChallenge-DiscoveryChallengeUITests.debug.xcconfig */,
+				357C1093151A0AE3DAEDC3B9 /* Pods-DiscoveryChallenge-DiscoveryChallengeUITests.release.xcconfig */,
+				DA45CE86D7964EE74E392FD2 /* Pods-DiscoveryChallengeTests.debug.xcconfig */,
+				C444D2E4C7726E03980D7437 /* Pods-DiscoveryChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7440B44927F8E1FA00C809BC /* BluetoothBuddy */ = {
+		7440B44927F8E1FA00C809BC /* DiscoveryChallenge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7440B47427F8E1FD00C809BC /* Build configuration list for PBXNativeTarget "BluetoothBuddy" */;
+			buildConfigurationList = 7440B47427F8E1FD00C809BC /* Build configuration list for PBXNativeTarget "DiscoveryChallenge" */;
 			buildPhases = (
+				6CEEA8F93902CFA802B87D9C /* [CP] Check Pods Manifest.lock */,
 				7440B44627F8E1FA00C809BC /* Sources */,
 				7440B44727F8E1FA00C809BC /* Frameworks */,
 				7440B44827F8E1FA00C809BC /* Resources */,
+				E3BF931DEDCF66CED8BEE954 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = BluetoothBuddy;
+			name = DiscoveryChallenge;
 			productName = BluetoothBuddy;
-			productReference = 7440B44A27F8E1FA00C809BC /* BluetoothBuddy.app */;
+			productReference = 7440B44A27F8E1FA00C809BC /* DiscoveryChallenge.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7440B45F27F8E1FD00C809BC /* BluetoothBuddyTests */ = {
+		7440B45F27F8E1FD00C809BC /* DiscoveryChallengeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7440B47727F8E1FD00C809BC /* Build configuration list for PBXNativeTarget "BluetoothBuddyTests" */;
+			buildConfigurationList = 7440B47727F8E1FD00C809BC /* Build configuration list for PBXNativeTarget "DiscoveryChallengeTests" */;
 			buildPhases = (
+				155584B054A65352C0E4063A /* [CP] Check Pods Manifest.lock */,
 				7440B45C27F8E1FD00C809BC /* Sources */,
 				7440B45D27F8E1FD00C809BC /* Frameworks */,
 				7440B45E27F8E1FD00C809BC /* Resources */,
@@ -163,27 +231,29 @@
 			dependencies = (
 				7440B46227F8E1FD00C809BC /* PBXTargetDependency */,
 			);
-			name = BluetoothBuddyTests;
+			name = DiscoveryChallengeTests;
 			productName = BluetoothBuddyTests;
-			productReference = 7440B46027F8E1FD00C809BC /* BluetoothBuddyTests.xctest */;
+			productReference = 7440B46027F8E1FD00C809BC /* DiscoveryChallengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7440B46927F8E1FD00C809BC /* BluetoothBuddyUITests */ = {
+		7440B46927F8E1FD00C809BC /* DiscoveryChallengeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7440B47A27F8E1FD00C809BC /* Build configuration list for PBXNativeTarget "BluetoothBuddyUITests" */;
+			buildConfigurationList = 7440B47A27F8E1FD00C809BC /* Build configuration list for PBXNativeTarget "DiscoveryChallengeUITests" */;
 			buildPhases = (
+				0EA8BB001FE8BF066E05AB99 /* [CP] Check Pods Manifest.lock */,
 				7440B46627F8E1FD00C809BC /* Sources */,
 				7440B46727F8E1FD00C809BC /* Frameworks */,
 				7440B46827F8E1FD00C809BC /* Resources */,
+				7BEF8597193950E5FA5780FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				7440B46C27F8E1FD00C809BC /* PBXTargetDependency */,
 			);
-			name = BluetoothBuddyUITests;
+			name = DiscoveryChallengeUITests;
 			productName = BluetoothBuddyUITests;
-			productReference = 7440B46A27F8E1FD00C809BC /* BluetoothBuddyUITests.xctest */;
+			productReference = 7440B46A27F8E1FD00C809BC /* DiscoveryChallengeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -209,7 +279,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7440B44527F8E1FA00C809BC /* Build configuration list for PBXProject "BluetoothBuddy" */;
+			buildConfigurationList = 7440B44527F8E1FA00C809BC /* Build configuration list for PBXProject "DiscoveryChallenge" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -222,9 +292,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7440B44927F8E1FA00C809BC /* BluetoothBuddy */,
-				7440B45F27F8E1FD00C809BC /* BluetoothBuddyTests */,
-				7440B46927F8E1FD00C809BC /* BluetoothBuddyUITests */,
+				7440B44927F8E1FA00C809BC /* DiscoveryChallenge */,
+				7440B45F27F8E1FD00C809BC /* DiscoveryChallengeTests */,
+				7440B46927F8E1FD00C809BC /* DiscoveryChallengeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -256,15 +326,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0EA8BB001FE8BF066E05AB99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DiscoveryChallenge-DiscoveryChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		155584B054A65352C0E4063A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DiscoveryChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CEEA8F93902CFA802B87D9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DiscoveryChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BEF8597193950E5FA5780FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiscoveryChallenge-DiscoveryChallengeUITests/Pods-DiscoveryChallenge-DiscoveryChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiscoveryChallenge-DiscoveryChallengeUITests/Pods-DiscoveryChallenge-DiscoveryChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DiscoveryChallenge-DiscoveryChallengeUITests/Pods-DiscoveryChallenge-DiscoveryChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3BF931DEDCF66CED8BEE954 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiscoveryChallenge/Pods-DiscoveryChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiscoveryChallenge/Pods-DiscoveryChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DiscoveryChallenge/Pods-DiscoveryChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7440B44627F8E1FA00C809BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74DCB2D127FBAB2C00942F09 /* WebViewViewController.swift in Sources */,
 				7440B47E27F90EB500C809BC /* BluetoothTableViewCell.swift in Sources */,
 				7440B45227F8E1FA00C809BC /* BluetoothViewController.swift in Sources */,
 				7440B44E27F8E1FA00C809BC /* AppDelegate.swift in Sources */,
 				7440B45027F8E1FA00C809BC /* SceneDelegate.swift in Sources */,
+				74DCB2CE27FB7FA400942F09 /* HeatmapTableViewController.swift in Sources */,
+				74DCB2CC27FB7F8C00942F09 /* HeatmapTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,12 +466,12 @@
 /* Begin PBXTargetDependency section */
 		7440B46227F8E1FD00C809BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7440B44927F8E1FA00C809BC /* BluetoothBuddy */;
+			target = 7440B44927F8E1FA00C809BC /* DiscoveryChallenge */;
 			targetProxy = 7440B46127F8E1FD00C809BC /* PBXContainerItemProxy */;
 		};
 		7440B46C27F8E1FD00C809BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7440B44927F8E1FA00C809BC /* BluetoothBuddy */;
+			target = 7440B44927F8E1FA00C809BC /* DiscoveryChallenge */;
 			targetProxy = 7440B46B27F8E1FD00C809BC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -436,12 +612,13 @@
 		};
 		7440B47527F8E1FD00C809BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9DB35F97CDFAA93FD6A098F /* Pods-DiscoveryChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2L8XQVU633;
+				DEVELOPMENT_TEAM = UH7DR49D85;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BluetoothBuddy/Info.plist;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
@@ -456,7 +633,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = discovery.BluetoothBuddy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DiscoveryChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -466,12 +643,13 @@
 		};
 		7440B47627F8E1FD00C809BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C12AC2044CE7D0D67E4020AA /* Pods-DiscoveryChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2L8XQVU633;
+				DEVELOPMENT_TEAM = UH7DR49D85;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BluetoothBuddy/Info.plist;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
@@ -486,7 +664,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = discovery.BluetoothBuddy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DiscoveryChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -496,6 +674,7 @@
 		};
 		7440B47827F8E1FD00C809BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA45CE86D7964EE74E392FD2 /* Pods-DiscoveryChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,12 +689,13 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BluetoothBuddy.app/BluetoothBuddy";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiscoveryChallenge.app/DiscoveryChallenge";
 			};
 			name = Debug;
 		};
 		7440B47927F8E1FD00C809BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C444D2E4C7726E03980D7437 /* Pods-DiscoveryChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,12 +710,13 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BluetoothBuddy.app/BluetoothBuddy";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiscoveryChallenge.app/DiscoveryChallenge";
 			};
 			name = Release;
 		};
 		7440B47B27F8E1FD00C809BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CBEA5C29700A64CA52117EF /* Pods-DiscoveryChallenge-DiscoveryChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -554,6 +735,7 @@
 		};
 		7440B47C27F8E1FD00C809BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 357C1093151A0AE3DAEDC3B9 /* Pods-DiscoveryChallenge-DiscoveryChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -573,7 +755,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7440B44527F8E1FA00C809BC /* Build configuration list for PBXProject "BluetoothBuddy" */ = {
+		7440B44527F8E1FA00C809BC /* Build configuration list for PBXProject "DiscoveryChallenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7440B47227F8E1FD00C809BC /* Debug */,
@@ -582,7 +764,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7440B47427F8E1FD00C809BC /* Build configuration list for PBXNativeTarget "BluetoothBuddy" */ = {
+		7440B47427F8E1FD00C809BC /* Build configuration list for PBXNativeTarget "DiscoveryChallenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7440B47527F8E1FD00C809BC /* Debug */,
@@ -591,7 +773,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7440B47727F8E1FD00C809BC /* Build configuration list for PBXNativeTarget "BluetoothBuddyTests" */ = {
+		7440B47727F8E1FD00C809BC /* Build configuration list for PBXNativeTarget "DiscoveryChallengeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7440B47827F8E1FD00C809BC /* Debug */,
@@ -600,7 +782,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7440B47A27F8E1FD00C809BC /* Build configuration list for PBXNativeTarget "BluetoothBuddyUITests" */ = {
+		7440B47A27F8E1FD00C809BC /* Build configuration list for PBXNativeTarget "DiscoveryChallengeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7440B47B27F8E1FD00C809BC /* Debug */,

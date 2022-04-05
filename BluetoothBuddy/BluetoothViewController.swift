@@ -13,15 +13,36 @@ class BluetoothViewController: UIViewController, UITableViewDataSource, CBCentra
     
     @IBOutlet weak var bluetoothTable: UITableView!
     
-    var arrayOfBluetoothDevices: [[String:Any]] = [[:]]
+    var arrayOfBluetoothDevices: [[String:Any]] = []
     var centralManager: CBCentralManager? = nil
+    let alert = UIAlertController(title: nil, message: "Searching...", preferredStyle: .alert)
     
+    let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
     override func viewDidLoad() {
         super.viewDidLoad()
         // Setting up the CBCentralManager
         centralManager = CBCentralManager(delegate: self, queue: .main)
         setupTable()
+        setupActivityIndicatorAndAlert()
         
+    }
+    
+    func setupActivityIndicatorAndAlert() {
+        
+        loadingIndicator.hidesWhenStopped = true
+        loadingIndicator.style = UIActivityIndicatorView.Style.medium
+        loadingIndicator.color = .blue
+        alert.view.addSubview(loadingIndicator)
+    }
+    
+    func startLoading() {
+        loadingIndicator.startAnimating()
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func stopLoading() {
+        loadingIndicator.stopAnimating()
+        dismiss(animated: false, completion: nil)
     }
 
     // setup table
@@ -33,32 +54,70 @@ class BluetoothViewController: UIViewController, UITableViewDataSource, CBCentra
     
     //MARK: TABLE DATASOURCE
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-     
+        
+        if arrayOfBluetoothDevices.count == 0 {
+               self.bluetoothTable.setEmptyMessage("Scan for blueooth devices around you!")
+        } else {
+            self.bluetoothTable.restore()
+            return arrayOfBluetoothDevices.count
+        }
         return arrayOfBluetoothDevices.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.bluetoothTable.dequeueReusableCell(withIdentifier: "bluetoothCell") as! BluetoothTableViewCell
-        if arrayOfBluetoothDevices.count != 0 {
+   
+          
+        if (arrayOfBluetoothDevices[indexPath.row]["rssi"] as? NSNumber) != nil {
             cell.name.text = (arrayOfBluetoothDevices[indexPath.row]["peripheral"] as? CBPeripheral)?.name
-            cell.distanceAway.text = "\(self.calculateDistanceOfPeripheral(rssiValue: (arrayOfBluetoothDevices[indexPath.row]["rssi"] as? NSNumber) ?? 0)) meters"
+            cell.distanceAway.text = String(format: "Distance away: %.2f meters", self.calculateDistanceOfPeripheral(rssiValue: ((arrayOfBluetoothDevices[indexPath.row]["rssi"] as? NSNumber)!))
+            )
         }
         return cell
     }
     
     //mark: CBCENTRALMANAGER DELEGATE
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
+       
+
         // let us check if bluetooth is on
-        self.centralManager?.scanForPeripherals(withServices: nil, options: nil)
+        switch central.state {
+            case .poweredOn:
+                break
+            case .poweredOff:
+                let alert = UIAlertController(title: "Bluetooth Is Off", message: "It is required to find bluetooth buddies around you!", preferredStyle: UIAlertController.Style.alert)
+
+                alert.addAction(UIAlertAction(title: "OK", style: .default))
+                present(alert, animated: true, completion: nil)
+                break
+            case .resetting:
+                break
+            case .unauthorized:
+                break
+            case .unsupported:
+                break
+            case .unknown:
+                break
+            default:
+                break
+            }
     }
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
-        if peripheral.name != nil {
+        if peripheral.name != nil && RSSI != 0{
             print("Distance: ",calculateDistanceOfPeripheral(rssiValue: RSSI)," meters")
             let newPeripheral = [
                 "peripheral": peripheral,
                 "rssi": RSSI
             ] as [String: Any]
-            self.arrayOfBluetoothDevices.append(newPeripheral)
+            
+            let found = self.arrayOfBluetoothDevices.filter {
+                ($0["peripheral"] as! CBPeripheral).name == peripheral.name
+            }
+            if found.count == 0 {
+                self.arrayOfBluetoothDevices.append(newPeripheral)
+            }
+            self.stopLoading()
+            
         }
         self.bluetoothTable.reloadData()
     }
@@ -75,7 +134,7 @@ class BluetoothViewController: UIViewController, UITableViewDataSource, CBCentra
         N - environmental factor (usually value between 2 (Low strength) and 4 (High strength))
         */
         let P = -61 //hard coded power value. Usually ranges between -59 to -65
-        let N = 2
+        let N = 4
         
         let S = rssiValue
 //
@@ -91,6 +150,30 @@ class BluetoothViewController: UIViewController, UITableViewDataSource, CBCentra
         return distance
     }
     
+    @IBAction func scan(_ sender: Any) {
+        self.startLoading()
+        self.centralManager?.scanForPeripherals(withServices: nil, options: nil)
+    }
+    
+}
+extension UITableView {
+    
+    func setEmptyMessage(_ message: String) {
+        let messageLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
+        messageLabel.text = message
+        messageLabel.textColor = .black
+        messageLabel.numberOfLines = 0
+        messageLabel.textAlignment = .center
+        messageLabel.font = UIFont(name: "TrebuchetMS", size: 15)
+        messageLabel.sizeToFit()
 
+        self.backgroundView = messageLabel
+        self.separatorStyle = .none
+    }
+
+    func restore() {
+        self.backgroundView = nil
+        self.separatorStyle = .singleLine
+    }
 }
 
